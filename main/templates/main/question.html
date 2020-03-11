@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block content %}
+    <h1>Question form</h1>
+
+    {% if error_message %}
+        <h4>{{ error_message }}</h4>
+        <a href="{% url 'main:question' question.id %}">Return to question form page</a>
+    {% else %}
+        <h4>{{ question.question_text }}</h4>
+
+        <form action="{% url 'main:question_validate' question.id %}" method="post">
+            {% csrf_token %}
+            {{ form_fields }}
+            <br>
+            <button type="submit">Validate</button>
+        </form>
+    {% endif %}
+{% endblock %}
