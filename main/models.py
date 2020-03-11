@@ -10,7 +10,7 @@ class Symptom(models.Model):
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
-    symptoms = models.ManyToMany(Symptom, related_name="symptoms")
+    symptoms = models.ManyToManyField(Symptom, related_name="symptoms")
 
     def __str__(self):
         return self.question_text
