@@ -1,0 +1,6 @@
+{% extends 'base/base.html' %}
+{% block content %}
+    <h1>{{ welcome_message }}</h1>
+
+    <a href="{% url 'main:question' 1 %}">Make health questionary</a>
+{% endblock %}

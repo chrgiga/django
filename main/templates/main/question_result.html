@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% block content %}
+    <h1>Question result</h1>
+
+    <p>You have selected:</p>
+    <ul>
+    {% for symptom in selected_symptoms %}
+        <li>{{ symptom.symptom_name }}</li>
+    {% endfor %}
+    </ul>
+
+    <p>The diagnostic is:</p>
+    <p>{{ diagnostic }}</p>
+
+    <a href="{% url 'main:question' question.id %}">Set question again?</a>
+{% endblock %}

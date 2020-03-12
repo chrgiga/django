@@ -1,0 +1,72 @@
+[
+  {
+    "model": "main.symptom",
+    "pk": 1,
+    "fields": {
+      "symptom_name": "fever"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 2,
+    "fields": {
+      "symptom_name": "cough"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 3,
+    "fields": {
+      "symptom_name": "fatigue"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 4,
+    "fields": {
+      "symptom_name": "joint and muscular pain"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 5,
+    "fields": {
+      "symptom_name": "sore throat"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 6,
+    "fields": {
+      "symptom_name": "headache"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 7,
+    "fields": {
+      "symptom_name": "nasal congestion"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 8,
+    "fields": {
+      "symptom_name": "nausea or vomiting"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 9,
+    "fields": {
+      "symptom_name": "diarrhea"
+    }
+  },
+  {
+    "model": "main.symptom",
+    "pk": 10,
+    "fields": {
+      "symptom_name": "mucus"
+    }
+  }
+]
